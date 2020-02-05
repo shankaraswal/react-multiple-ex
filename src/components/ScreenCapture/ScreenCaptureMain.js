@@ -5,7 +5,7 @@ import Static from '../common/Static';
 
 class ScreenCaptureMain extends Component {
   state = {
-    name: 'GAMO',
+    name: 'S Aswal',
     screenCapture: ''
   }
 
@@ -23,11 +23,11 @@ class ScreenCaptureMain extends Component {
           <Fragment>
             <Static name={this.state.name} />
             <p>
-              Start editing to see some magic happen :)
+              Drag mouse, select area and leave mouse, you will found your cropped image....
             </p>
-            <button onClick={onStartCapture}>Capture</button>
-            <h3>Captured Screen Shot</h3>
-            <div className="capturedImgPH">
+            <button className="mt-4 btn btn-danger" onClick={onStartCapture}>Capture</button>
+            <h3 className="mt-4">Captured Screen Shot</h3>
+            <div className="mt-4 container capturedImgPH">
               <img src={screenCapture} />
             </div>
           </Fragment>
