@@ -12,7 +12,8 @@ import Toastify from './components/Toastify/Toastify'
 import ModalPop from './components/ModalPop/ModalPop'
 import DarkMode from './components/DarkMode/DarkMode';
 import ScreenCapture from './components/ScreenCapture/ScreenCaptureMain';
-
+import MemberA from './components/Hoc/MemberA';
+import MemberB from './components/Hoc/MemberB';
 
 function App() {
   return (
@@ -21,14 +22,13 @@ function App() {
         <Header/>
        <Navbar />
         <Switch>
-          <div className="container mt-4">
             <Route exact path='/' component={Toastify} />
             <Route path='/modal' component={ModalPop} />
             <Route path='/dark' component={DarkMode} />
             <Route path='/crop' component={ScreenCapture} />
-            
-          </div>
-
+            <Route path='/hoc' component={MemberA} />
+            <Route path='/mema' component={MemberA} />
+            <Route path='/memb' component={MemberB} />
       </Switch>
       </Router>
     </div>
