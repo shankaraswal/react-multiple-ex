@@ -1,35 +1,31 @@
-import React, { Component } from 'react'
+import React, { Component, Fragment } from 'react';
 import html2canvas from 'html2canvas';
 
-class Crop extends Component {
+export default class ScreenCapture extends Component {
   static defaultProps = {
     onStartCapture: () => null,
     onEndCapture: () => null
   }
-  constructor(props) {
-    super(props)
-  
-    this.state = {
-      on: false,
-      startX: 0,
-      startY: 0,
-      endX: 0,
-      endY: 0,
-      crossHairsTop: 0,
-      crossHairsLeft: 0,
-      isMouseDown: false,
-      windowWidth: 0,
-      windowHeight: 0,
-      borderWidth: 0,
-      cropPositionTop: 0,
-      cropPositionLeft: 0,
-      cropWidth: 0,
-      cropHeigth: 0,
-      imageURL: ''
-    }
+
+  state = {
+    on: false,
+    startX: 0,
+    startY: 0,
+    endX: 0,
+    endY: 0,
+    crossHairsTop: 0,
+    crossHairsLeft: 0,
+    isMouseDown: false,
+    windowWidth: 0,
+    windowHeight: 0,
+    borderWidth: 0,
+    cropPositionTop: 0,
+    cropPositionLeft: 0,
+    cropWidth: 0,
+    cropHeigth: 0,
+    imageURL: ''
   }
 
-  
   componentDidMount = () => {
     this.handleWindowResize()
     window.addEventListener('resize', this.handleWindowResize)
@@ -163,7 +159,6 @@ class Crop extends Component {
   }
 
   render() {
-
     const {
       on,
       crossHairsTop,
@@ -173,8 +168,7 @@ class Crop extends Component {
       imageURL
     } = this.state
 
-    if (!on) return this.renderChild();
-
+    if (!on) return this.renderChild()
 
     return (
       <div
@@ -195,4 +189,3 @@ class Crop extends Component {
     )
   }
 }
-export default Crop;
