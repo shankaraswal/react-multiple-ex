@@ -18,6 +18,7 @@ import MemberB from './components/Hoc/MemberB';
 import WrapCompA from './components/HocComp/WrapCompA';
 import WrapCompB from './components/HocComp/WrapCompB';
 import WrapCompC from './components/HocComp/WrapCompC';
+import Ref from './components/Ref/Ref';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
             <Route path='/hoca' component={WrapCompA} />
             <Route path='/hocb' component={WrapCompB} />
             <Route path='/hocc' component={WrapCompC} />
+            <Route path='/ref' component={Ref} />
       </Switch>
       </Router>
     </div>

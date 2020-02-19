@@ -5,40 +5,24 @@ export class CompList extends Component {
   render() {
     return (
       <div className="row compList">
-        <div className="col-sm-4">
+        <div className="col-sm-3">
           <div className="card">
             <div className="card-header">Higher Order Component</div>
             <div className="card-body">
-              <ul className="text-left">
-                <li><NavLink to="/hoca">Member A</NavLink></li>
-                <li><NavLink to="/hocb">Member B</NavLink></li>
-                <li><NavLink to="/hocc">Member C</NavLink></li>
-              </ul>
+                <p><NavLink to="/hoca">Member A</NavLink></p>
+                <p><NavLink to="/hocb">Member B</NavLink></p>
+                <p><NavLink to="/hocc">Member C</NavLink></p>
             </div>
-          </div>
+            </div>
         </div>
         
-        <div className="col-sm-4">
-          <ul className="text-left">
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-          </ul>
-        </div>
-        <div className="col-sm-4">
-          <ul className="text-left">
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-            <li><NavLink to="/Hoc1">Hoc1</NavLink></li>
-          </ul>
+        <div className="col-sm-3">
+        <div className="card">
+          <div className="card-header">Use of Ref</div>
+          <div className="card-body">
+                <p><NavLink to="/ref">Ref Example</NavLink></p>
+            </div>
+            </div>
         </div>
       
         
