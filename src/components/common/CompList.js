@@ -24,6 +24,24 @@ export class CompList extends Component {
             </div>
             </div>
         </div>
+
+        <div className="col-sm-3">
+        <div className="card">
+          <div className="card-header">Pure Component</div>
+          <div className="card-body">
+                <p><NavLink to="/purecomp">Pure Component Example</NavLink></p>
+            </div>
+            </div>
+        </div>
+
+        <div className="col-sm-3">
+        <div className="card">
+          <div className="card-header">getDerivedStateFromProps()</div>
+          <div className="card-body">
+                <p><NavLink to="/getderived">Static method: getDerivedStateFromProps()</NavLink></p>
+            </div>
+            </div>
+        </div>
       
         
         

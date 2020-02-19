@@ -19,6 +19,8 @@ import WrapCompA from './components/HocComp/WrapCompA';
 import WrapCompB from './components/HocComp/WrapCompB';
 import WrapCompC from './components/HocComp/WrapCompC';
 import Ref from './components/Ref/Ref';
+import PureComp from './components/PureComp/PureComp';
+import GetDerived from './components/GetDerived/ParentComp'
 
 function App() {
   return (
@@ -40,6 +42,8 @@ function App() {
             <Route path='/hocb' component={WrapCompB} />
             <Route path='/hocc' component={WrapCompC} />
             <Route path='/ref' component={Ref} />
+            <Route path="/purecomp" component={ PureComp} />
+            <Route path="/getderived" component={ GetDerived} />
       </Switch>
       </Router>
     </div>
