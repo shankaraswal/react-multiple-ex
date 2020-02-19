@@ -7,13 +7,17 @@ import {
 
 import Header from './components/common/Header'
 import Navbar from './components/common/Navbar';
-
+import CompList from './components/common/CompList'
 import Toastify from './components/Toastify/Toastify'
 import ModalPop from './components/ModalPop/ModalPop'
 import DarkMode from './components/DarkMode/DarkMode';
 import ScreenCapture from './components/ScreenCapture/ScreenCaptureMain';
 import MemberA from './components/Hoc/MemberA';
 import MemberB from './components/Hoc/MemberB';
+
+import WrapCompA from './components/HocComp/WrapCompA';
+import WrapCompB from './components/HocComp/WrapCompB';
+import WrapCompC from './components/HocComp/WrapCompC';
 
 function App() {
   return (
@@ -22,13 +26,18 @@ function App() {
         <Header/>
        <Navbar />
         <Switch>
-            <Route exact path='/' component={Toastify} />
+            <Route exact path='/' component={CompList} />
+            <Route exact path='/toast' component={Toastify} />
             <Route path='/modal' component={ModalPop} />
             <Route path='/dark' component={DarkMode} />
             <Route path='/crop' component={ScreenCapture} />
             <Route path='/hoc' component={MemberA} />
             <Route path='/mema' component={MemberA} />
             <Route path='/memb' component={MemberB} />
+
+            <Route path='/hoca' component={WrapCompA} />
+            <Route path='/hocb' component={WrapCompB} />
+            <Route path='/hocc' component={WrapCompC} />
       </Switch>
       </Router>
     </div>

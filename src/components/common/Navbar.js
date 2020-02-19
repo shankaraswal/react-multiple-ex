@@ -38,7 +38,8 @@ class Navbar extends Component {
     return (
       <nav className="navbar navbar-right">
         <ul className="nav justify-content-end">
-          <li className="nav-item"><NavLink className="nav-link" to="/">Toastify</NavLink></li>
+        <li className="nav-item"><NavLink className="nav-link" to="/">Home</NavLink></li>
+        <li className="nav-item"><NavLink className="nav-link" to="/toast">Toastify</NavLink></li>
           <li className="nav-item"><NavLink className="nav-link" to="/modal">Modal</NavLink></li>
           <li className="nav-item"><NavLink className="nav-link" to="/crop">Screen Cropper</NavLink></li>
           <li className="nav-item"><NavLink className="nav-link" to="/dark">Dark Mode</NavLink></li>

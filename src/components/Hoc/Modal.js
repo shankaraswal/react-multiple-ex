@@ -8,7 +8,6 @@ class Modal extends Component {
 
   render() {
     const xx = { ...this.props.mydetail };
-    console.log(xx)
     return (
         <div
           className="modal-wrapper"

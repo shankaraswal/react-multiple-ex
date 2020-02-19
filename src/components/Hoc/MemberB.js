@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Family from "./Hoc";
+import axios from 'axios';
 
 const memDetail = {
   name:'MemberB',
@@ -10,6 +11,27 @@ const memDetail = {
 class MemberB extends Component {
   constructor(props) {
     super(props);
+    
+  }
+
+  getData = async () => { 
+    try {
+      const posts = axios.get('https://jsonplaceholder.typicode.com/post');
+      const users = axios.get('https://jsonplaceholder.typicode.com/users');
+    
+      const data1 = await posts;
+      const data2 = await users;
+    }
+    catch(err){ 
+      
+  
+    }
+  }
+
+
+  componentDidMount() { 
+    this.getData();
+    
   }
 
   render() {

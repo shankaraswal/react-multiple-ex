@@ -2,3 +2,27 @@
   position: absolute;
   border: 1px solid #eee;
 }
+
+.navbar {
+  border-bottom: 1px solid #333;
+  margin-bottom: 3rem;
+}
+
+.compList ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.compList ul li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+
+.compList ul li a {
+  color: #f00;
+  padding-bottom: 10px;
+  display: block;
+}
