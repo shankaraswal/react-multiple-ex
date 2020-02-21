@@ -42,6 +42,15 @@ export class CompList extends Component {
             </div>
             </div>
         </div>
+
+        <div className="col-sm-3">
+        <div className="card">
+          <div className="card-header">getSnapshotBeforeUpdate()</div>
+          <div className="card-body">
+                <p><NavLink to="/getsnap">Static method: getSnapshotBeforeUpdate()</NavLink></p>
+            </div>
+            </div>
+        </div>
       
         
         

@@ -30,7 +30,9 @@ export class ParentComp extends Component {
         <ul className="mt-4 text-left">
         <li>Updating nested state property</li>
         <li>getDerivedStateFromProps method always execute before render</li>
-        <li>getDerivedStateFromProps method excute for intitial load and re-render both</li>
+          <li>getDerivedStateFromProps method excute for intitial load and re-render both</li>
+          <li>it takes previous state and next props</li>
+          <li>we can get the previous state with in getDerivedStateFromProps() method</li>
         </ul>
     </div>
     )

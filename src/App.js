@@ -21,6 +21,7 @@ import WrapCompC from './components/HocComp/WrapCompC';
 import Ref from './components/Ref/Ref';
 import PureComp from './components/PureComp/PureComp';
 import GetDerived from './components/GetDerived/ParentComp'
+import GetSnapshot from './components/GetSnapshot/Parent';
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
             <Route path='/ref' component={Ref} />
             <Route path="/purecomp" component={ PureComp} />
             <Route path="/getderived" component={ GetDerived} />
+            <Route path="/getsnap" component={ GetSnapshot} />
       </Switch>
       </Router>
     </div>

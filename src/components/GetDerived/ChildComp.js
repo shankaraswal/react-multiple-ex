@@ -10,13 +10,15 @@ export default class ChildComp extends Component {
   }
   static getDerivedStateFromProps(nextProps, prevState) {
     console.log('------------------------------------');
-    console.log('getDerivedStateFromProps method', nextProps, prevState)
+    console.log('next props', nextProps)
+    console.log('previous state' , prevState)
     
     return {
       childCounter:nextProps.data.count*11
     }
   }
   render() {
+    console.log('current state', this.state.childCounter)
    console.log('------------------------------------');
    console.log('render method')
     return (
