@@ -9,9 +9,9 @@ export class CompList extends Component {
           <div className="card">
             <div className="card-header">Higher Order Component</div>
             <div className="card-body">
-                <p><NavLink to="/hoca">Member A</NavLink></p>
-                <p><NavLink to="/hocb">Member B</NavLink></p>
-                <p><NavLink to="/hocc">Member C</NavLink></p>
+              <NavLink to="/hoca">Member A</NavLink>,
+                <NavLink to="/hocb">Member B</NavLink>,
+                <NavLink to="/hocc">Member C</NavLink>
             </div>
             </div>
         </div>
@@ -38,7 +38,7 @@ export class CompList extends Component {
         <div className="card">
           <div className="card-header">getDerivedStateFromProps()</div>
           <div className="card-body">
-                <p><NavLink to="/getderived">Static method: getDerivedStateFromProps()</NavLink></p>
+                <p><NavLink to="/getderived">getDerivedStateFromProps()</NavLink></p>
             </div>
             </div>
         </div>
@@ -47,7 +47,16 @@ export class CompList extends Component {
         <div className="card">
           <div className="card-header">getSnapshotBeforeUpdate()</div>
           <div className="card-body">
-                <p><NavLink to="/getsnap">Static method: getSnapshotBeforeUpdate()</NavLink></p>
+                <p><NavLink to="/getsnap">getSnapshotBeforeUpdate()</NavLink></p>
+            </div>
+            </div>
+        </div>
+
+        <div className="col-sm-3">
+        <div className="card">
+          <div className="card-header">Portal Example</div>
+          <div className="card-body">
+                <p><NavLink to="/portals">React Portal</NavLink></p>
             </div>
             </div>
         </div>

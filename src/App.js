@@ -22,6 +22,7 @@ import Ref from './components/Ref/Ref';
 import PureComp from './components/PureComp/PureComp';
 import GetDerived from './components/GetDerived/ParentComp'
 import GetSnapshot from './components/GetSnapshot/Parent';
+import Portals from './components/Portals/Portals';
 
 function App() {
   return (
@@ -46,6 +47,7 @@ function App() {
             <Route path="/purecomp" component={ PureComp} />
             <Route path="/getderived" component={ GetDerived} />
             <Route path="/getsnap" component={ GetSnapshot} />
+            <Route path="/portals" component={ Portals} />
       </Switch>
       </Router>
     </div>

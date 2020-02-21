@@ -14,6 +14,10 @@
   list-style-type: none;
 }
 
+.compList>div {
+  margin-bottom: 2rem;
+}
+
 .compList ul li {
   padding: 0;
   margin: 0;
